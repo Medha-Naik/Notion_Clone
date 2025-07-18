@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Notion Clone</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notion - The AI Workspace</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Hello, Tzenz! 🎉</h1>
-    <p>Welcome to your Notion clone homepage.</p>
+  <header class="navbar">
+    <div class="logo">Notion</div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Mail</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">AI</a></li>
+        <li><a href="#">Enterprise</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Request a demo</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#" class="btn blue-btn">Get Notion free</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <h1>The AI workspace that works for you.</h1>
+        <p>One place where teams find every answer,<br> automate the busywork, and get things done</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn blue-btn">Get Notion free</a>
+          <a href="#" class="btn gray-btn">Request a demo</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="{{ url_for('static', filename='assets/notionlogo.png')}}" alt="Notion workspace interface">
+      </div>
+    </section>
+
+    <div class="feature-section">
+      <div class="feature-card-pink">
+        <div class="card-header">
+          <span class="icon"></span>
+          <span class="label">AI Meeting Notes</span>
+          <span class="new-badge">New</span>
+        </div>
+        <h2>Perfect notes every time.</h2>
+        <div class="content-box">
+          <img src="{{url_for('static', filename='assets/AImeeting.png')}}" alt="AI notes interface">
+        </div>
+      </div>
+
+      <div class="feature-card-blue">
+        <div class="card-header">
+          <span class="icon"></span>
+          <span class="label">Enterprise Search</span>
+          <span class="new-badge">New</span>
+        </div>
+        <h2>One search for everything.</h2>
+        <div class="content-box">
+          <img src="{{url_for('static', filename='assets/AImeeting.png')}}" alt="AI notes interface">
+        </div>
+      </div>
+    </div>
+
+      
+
+      <article class="feature-card" aria-label="Projects">
+        <h3>Keep every plan on track</h3>
+      </article>
+
+      <article class="feature-card" aria-label="Notion Mail">
+        <h3>The inbox that thinks like you</h3>
+      </article>
+
+      <article class="feature-card" aria-label="Business in a Box">
+        <h3>Run your entire company</h3>
+      </article>
+    </section>
+
+    <section class="team-section">
+      <h2>One space for every team</h2>
+      <nav aria-label="Team categories">
+        <ul class="team-nav">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">IT</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Startups</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="search-section">
+      <h2>Find everything with one search</h2>
+      <p>Search across company knowledge and apps, right inside Notion.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn blue-btn">Try for free</a>
+        <a href="#" class="btn blue-btn">Request a demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>More productivity. Fewer tools.</p>
+  </footer>
 </body>
 </html>
