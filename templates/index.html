@@ -35,13 +35,9 @@
           <a href="#" class="btn gray-btn">Request a demo</a>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="{{ url_for('static', filename='assets/notionlogo.png')}}" alt="Notion workspace interface">
-      </div>
     </section>
   
     <section class="feature-section">
-
       <article class="ai-notes-feature">
         <div class="card-header">
           <span class="icon mic-icon"></span>
@@ -50,7 +46,7 @@
         </div>
         <h2 class="card-title">Perfect notes every time.</h2>
         <div class="card-body">
-          <img src="static/assets/AInotes.png" alt="AI notes">
+          <img src="{{ url_for('static', filename='assets/AInotes.png') }}" alt="AI notes">
         </div>
       </article>
 
@@ -62,62 +58,68 @@
         </div>
         <h2 class="card-title">One search for everything.</h2>
         <div class="card-body">
-          <img src="static/assets/enterprise-search.png" alt="enterprise-search">
+          <img src="{{ url_for('static', filename='assets/enterprise-search.png') }}" alt="enterprise-search">
         </div>
       </article>
 
-
-      <article class="launch-tracker-feature"><div class="card-header">
+      <article class="launch-tracker-feature">
+        <div class="card-header">
           <span class="icon project-icon"></span>
           <span class="label">Projects</span>
           <span class="badge new-badge">New</span>
         </div>
         <h2 class="card-title">Keep every plan on track.</h2>
         <div class="card-body">
-          <img src="static/assets/launch-tracker.png" alt="laucnh-tracker">
-        </div></article>  
+          <img src="{{ url_for('static', filename='assets/launch-tracker.png') }}" alt="launch-tracker">
+        </div>
+      </article>
 
-
-      <article class="public-roadmap-feature"><div class="card-header">
+      <article class="public-roadmap-feature">
+        <div class="card-header">
           <span class="icon boxes-icon"></span>
           <span class="label">Business-in-a-box</span>
           <span class="badge new-badge">New</span>
         </div>
         <h2 class="card-title">Run your entire company.</h2>
         <div class="card-body">
-          <img src="static/assets/Public-roadmap.png" alt="Buisness in a box">
-        </div></article>
-
+          <img src="{{ url_for('static', filename='assets/Public-roadmap.png') }}" alt="Business in a box">
+        </div>
+      </article>
     </section>
-
 
     <section class="team-section">
       <h1>One space for every team</h1>
       <nav aria-label="Team categories">
         <ul class="team-nav">
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Engineering</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">IT</a></li>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Startups</a></li>
+          <li><a href="#" data-image="assets/Product.png">Product</a></li>
+          <li><a href="#" data-image="assets/Engineering.png">Engineering</a></li>
+          <li><a href="#" data-image="assets/Design.png">Design</a></li>
+          <li><a href="#" data-image="assets/IT.png">IT</a></li>
+          <li><a href="#" data-image="assets/Marketing.png">Marketing</a></li>
+          <li><a href="#" data-image="assets/Startups.png">Startups</a></li>
         </ul>
       </nav>
+      <div class="team-image">
+        <img src="{{ url_for('static', filename='assets/Product.png') }}" alt="Team Image" id="teamImg">
+      </div>
     </section>
 
-     <section class="search-section">
-      <h2>Find everything with one search</h2>
+    <section class="search-section">
+      <h1>Find everything with one search</h1>
       <p>Search across company knowledge and apps, right inside Notion.</p>
       <div class="cta-buttons">
         <a href="#" class="btn blue-btn">Try for free</a>
         <a href="#" class="btn blue-btn">Request a demo</a>
       </div>
-  </section>
+    </section>
   </main>
 
-   
   <footer class="main-footer">
     <p>More productivity. Fewer tools.</p>
   </footer>
+  <script>
+    const STATIC_URL = '{{ url_for("static", filename="") }}';
+  </script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
