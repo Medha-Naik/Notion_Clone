@@ -39,50 +39,60 @@
         <img src="{{ url_for('static', filename='assets/notionlogo.png')}}" alt="Notion workspace interface">
       </div>
     </section>
+  
+    <section class="feature-section">
 
-    <div class="feature-section">
-      <div class="feature-card-pink">
+      <article class="ai-notes-feature">
         <div class="card-header">
-          <span class="icon"></span>
+          <span class="icon mic-icon"></span>
           <span class="label">AI Meeting Notes</span>
-          <span class="new-badge">New</span>
+          <span class="badge new-badge">New</span>
         </div>
-        <h2>Perfect notes every time.</h2>
-        <div class="content-box">
-          <img src="{{url_for('static', filename='assets/AImeeting.png')}}" alt="AI notes interface">
+        <h2 class="card-title">Perfect notes every time.</h2>
+        <div class="card-body">
+          <img src="static/assets/AInotes.png" alt="AI notes">
         </div>
-      </div>
+      </article>
 
-      <div class="feature-card-blue">
+      <article class="enterprise-search-feature">
         <div class="card-header">
-          <span class="icon"></span>
+          <span class="icon search-icon"></span>
           <span class="label">Enterprise Search</span>
-          <span class="new-badge">New</span>
+          <span class="badge new-badge">New</span>
         </div>
-        <h2>One search for everything.</h2>
-        <div class="content-box">
-          <img src="{{url_for('static', filename='assets/AImeeting.png')}}" alt="AI notes interface">
+        <h2 class="card-title">One search for everything.</h2>
+        <div class="card-body">
+          <img src="static/assets/enterprise-search.png" alt="enterprise-search">
         </div>
-      </div>
-    </div>
-
-      
-
-      <article class="feature-card" aria-label="Projects">
-        <h3>Keep every plan on track</h3>
       </article>
 
-      <article class="feature-card" aria-label="Notion Mail">
-        <h3>The inbox that thinks like you</h3>
-      </article>
 
-      <article class="feature-card" aria-label="Business in a Box">
-        <h3>Run your entire company</h3>
-      </article>
+      <article class="launch-tracker-feature"><div class="card-header">
+          <span class="icon project-icon"></span>
+          <span class="label">Projects</span>
+          <span class="badge new-badge">New</span>
+        </div>
+        <h2 class="card-title">Keep every plan on track.</h2>
+        <div class="card-body">
+          <img src="static/assets/launch-tracker.png" alt="laucnh-tracker">
+        </div></article>  
+
+
+      <article class="public-roadmap-feature"><div class="card-header">
+          <span class="icon boxes-icon"></span>
+          <span class="label">Business-in-a-box</span>
+          <span class="badge new-badge">New</span>
+        </div>
+        <h2 class="card-title">Run your entire company.</h2>
+        <div class="card-body">
+          <img src="static/assets/Public-roadmap.png" alt="Buisness in a box">
+        </div></article>
+
     </section>
 
+
     <section class="team-section">
-      <h2>One space for every team</h2>
+      <h1>One space for every team</h1>
       <nav aria-label="Team categories">
         <ul class="team-nav">
           <li><a href="#">Product</a></li>
@@ -95,16 +105,17 @@
       </nav>
     </section>
 
-    <section class="search-section">
+     <section class="search-section">
       <h2>Find everything with one search</h2>
       <p>Search across company knowledge and apps, right inside Notion.</p>
       <div class="cta-buttons">
         <a href="#" class="btn blue-btn">Try for free</a>
         <a href="#" class="btn blue-btn">Request a demo</a>
       </div>
-    </section>
+  </section>
   </main>
 
+   
   <footer class="main-footer">
     <p>More productivity. Fewer tools.</p>
   </footer>
